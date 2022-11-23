@@ -1,0 +1,3413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Russo+One&display=swap" rel="stylesheet">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            max-width: 1140px;
+            margin: 0px auto;
+        }
+
+        .body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .logo_img {
+            width: 100%;
+            max-width: 269px;
+
+            padding-right: 17px;
+            margin-left: 5px;
+
+
+        }
+
+        .content {
+            background: #222222;
+            overflow: hidden;
+
+        }
+
+        .logo {
+            padding: 18px 10px 0px 0px;
+
+            display: flex;
+            align-items: center;
+
+            transform: translateY(-100%);
+
+
+        }
+
+        .txt2 {
+            color: #2194FF;
+
+            border-left: 1px solid #ffffff;
+            padding: 10px 10px 10px 17px;
+            font-size: 16px;
+
+
+        }
+
+
+        .txt1 {
+            margin-top: 25px;
+            font-family: 'Open Sans', sans-serif;
+            padding: 10px;
+
+        }
+
+        .menu {
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+
+            padding: 0px 2px 10px 10px;
+        }
+
+        .txt3 {
+            font-size: 24px;
+            font-family: 'Russo One', sans-serif;
+            color: #ffffff;
+            max-width: 214px;
+            margin-top: 8px;
+        }
+
+        .txt4 {
+            font-size: 16px;
+            color: #2194FF;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+        }
+
+        .tel {
+            margin-top: 1px;
+            padding: 17px 0px 10px 10px;
+
+            transform: translateY(-100%);
+        }
+
+        .txt4:hover {
+            color: red;
+            transition: all 0.5s;
+        }
+
+
+        .txt2 {
+            max-width: 189px;
+        }
+
+        .txt5 {
+            transform: translateX(-100%);
+        }
+
+        .txt4 {
+            max-width: 140px;
+        }
+
+        @media (max-width: 868px) {
+            .logo_img {
+                width: 100%;
+                max-width: 169px;
+
+                padding-right: 17px;
+            }
+
+            .logo {
+                padding: 10px 10px 0px 5px;
+
+                display: flex;
+                align-items: center;
+            }
+
+            .txt2 {
+                display: none;
+            }
+
+            .txt3 {
+                font-size: 15px;
+                width: 140px;
+                padding: 10px 0px 10px 10px;
+            }
+
+            .txt4 {
+                padding: 0px 0px 10px 10px;
+            }
+
+            .tel {
+                margin-top: 1px;
+                padding: 10px 0px 10px 10px;
+
+
+            }
+
+
+        }
+
+        /* =======content========= */
+
+        /* .section {
+        overflow: hidden;
+}
+
+@media (min-width: 767px) {
+    .section {
+        display: flex;
+      
+    }
+} */
+        /* 
+.section_content {
+   flex: 0 0 100%;
+}
+.section_container {
+    max-width: 1140px;
+    padding: 20px;
+    margin: 0px auto;
+}
+.section_body {
+    width: 50%;
+}
+.section_title {
+}
+.section_image {
+}
+.section_image {
+   
+}
+.img2 {
+    width: 100%;
+    max-width: 1037px;
+}
+
+@media (min-width: 767px) {
+   .section_image {
+    flex: 0 0 50%;
+    transform: translate(-100%, 0%);
+   }
+} */
+
+        .selection {
+            overflow: hidden;
+        }
+
+        @media (min-width: 767px) {
+            .selection {
+                display: flex;
+            }
+        }
+
+        .selection_content {
+            flex: 0 0 100%;
+        }
+
+        .selection_container {
+            max-width: 1140px;
+            padding: 20px;
+            margin: 0px auto;
+        }
+
+        .selection_body {
+            width: 50%;
+            padding: 15px;
+        }
+
+        .img2 {
+            width: 100%;
+            max-width: 137px;
+            transform: translateX(100%);
+        }
+
+
+
+        @media (min-width: 767px) {
+            .selection_image {
+                flex: 0 0 50%;
+                transform: translate(-100%, 0%);
+            }
+        }
+
+        .icon1 {
+            display: flex;
+            align-items: center;
+        }
+
+        .icon2 {
+            object-fit: contain;
+            padding: 0px 5px 0px 7px;
+        }
+
+        .txt7 {
+            font-family: 'Open Sans', sans-serif;
+            color: #ffffff;
+            padding: 10px 7px 7px 7px;
+            max-width: 210px;
+        }
+
+        .txt7-2 {
+            font-family: 'Open Sans', sans-serif;
+            color: #ffffff;
+            padding: 10px 7px 7px 7px;
+            max-width: 310px;
+        }
+
+        .txt5 {
+            display: flex;
+            position: relative;
+            z-index: 2;
+        }
+
+        .txt8 {
+            font-size: 64px;
+            color: #2194FF;
+            font-family: 'Russo One', sans-serif;
+            font-weight: 400;
+            max-width: 617px;
+        }
+
+        .txt9 {
+            font-family: 'Russo One', sans-serif;
+            font-weight: 400;
+            color: #ffffff;
+            font-size: 2px;
+            max-width: 617px;
+        }
+
+        .button1 {
+            background: #2194FF;
+            width: 395px;
+            height: 87px;
+            font-size: 22px;
+            font-family: 'Russo One', sans-serif;
+            font-weight: 400;
+            color: #ffffff;
+            border-radius: 11px;
+            margin-top: 20px;
+
+            border: 4px solid #2194FF;
+            background: linear-gradient(45deg, #2194FF, #81C0FB, #0079C2);
+            box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.453);
+            transition: all 1s;
+        }
+
+
+
+
+
+
+        .buttons {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .txt10 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 1px;
+            color: #ffffff;
+            padding: 10px;
+            max-width: 355px;
+        }
+
+
+        @media(max-width: 767px) {
+            br {
+                display: none;
+            }
+
+
+            /* ===== */
+
+            .selection {
+                overflow-x: hidden;
+            }
+
+
+            @media (min-width: 767px) {
+                .selection {
+                    display: flex;
+                }
+            }
+
+            .selection_content {
+                flex: 0 0 100%;
+            }
+
+            .selection_container {
+                max-width: 1140px;
+                padding: 20px;
+                margin: 0px auto;
+            }
+
+            .selection_body {
+                width: 100%;
+                padding: 1px;
+            }
+
+
+            /* ======= */
+
+            .button1 {
+                width: 250px;
+                font-size: 15px;
+                height: 55px;
+            }
+
+
+            .buttons {
+                display: inline-flex;
+                flex-direction: column;
+                align-items: start;
+            }
+
+            .txt8 {
+                font-size: 45px;
+            }
+
+
+        }
+
+        /* =============price=============== */
+
+        .container2 {
+            max-width: 1140px;
+            margin: 0px auto;
+        }
+
+        .price {
+            background: #2D3238;
+            height: 535px;
+
+        }
+
+        .txt11 {
+            text-align: center;
+            font-family: 'Russo One', sans-serif;
+            color: #2194FF;
+            font-size: 36px;
+            max-width: 1140px;
+            padding: 10px;
+        }
+
+        .txt12 {
+            margin-top: 20px;
+        }
+
+        .block_s1 {
+            justify-content: space-between;
+            flex-wrap: wrap;
+            display: flex;
+        }
+
+        .block1 {
+            padding: 10px;
+
+
+        }
+
+        .block2 {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .block3 {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+
+        .txt13 {
+            width: 139px;
+            font-size: 36px;
+            font-family: 'Russo One', sans-serif;
+            color: #ffffff;
+        }
+
+        .txt14 {
+            font-family: 'Russo One', sans-serif;
+            color: #2194FF;
+            font-size: 24px;
+            max-width: 259px;
+        }
+
+        .txt15 {
+            font-family: 'Open Sans', sans-serif;
+            color: #F1F1F1;
+            font-weight: 300;
+            font-size: 16px;
+            max-width: 253px;
+            margin-top: 20px;
+        }
+
+        .button2 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            background: #2194FF;
+            border: 0px;
+            width: 155px;
+            height: 43px;
+            border-radius: 50px;
+            color: #ffffff;
+            margin-top: 20px;
+
+        }
+
+        .txt16 {
+            font-family: 'Russo One', sans-serif;
+            color: #F1F1F1;
+            font-size: 20px;
+        }
+
+        .txt17 {
+            display: flex;
+            padding: 10px;
+        }
+
+        .txt18 {
+            padding: 0px 10px;
+
+
+        }
+
+        .txt19 {
+            font-family: 'Russo One', sans-serif;
+            font-size: 36px;
+            color: #F1F1F1B2;
+
+            border-right: 1px solid #F1F1F14D;
+            padding: 0px 20px 0px 0px;
+        }
+
+        .span1 {
+            font-size: 18px;
+            color: #F1F1F1B2;
+            max-width: 139px;
+        }
+
+        .txt20 {
+            font-family: 'Russo One', sans-serif;
+        }
+
+        .txt19w {
+            font-family: 'Russo One', sans-serif;
+
+        }
+
+        .txt20w {
+            font-family: 'Russo One', sans-serif;
+            padding: 0px 0px 0px 10px;
+        }
+
+        .txt24 {
+            font-size: 36px;
+            color: #F1F1F1B2;
+            max-width: 77px;
+        }
+
+        .span2 {
+            font-size: 18px;
+            color: #F1F1F1B2;
+            max-width: 108px;
+        }
+
+        .car2 {
+            width: 100%;
+            max-width: 542px;
+        }
+
+        .txt22 {
+            max-width: 80px;
+        }
+
+        .icon2w1 {
+            width: 20px;
+            padding: 0px 5px 0px 7px;
+        }
+
+        .icon2w2 {
+            width: 20px;
+            padding: 0px 5px 0px 7px;
+        }
+
+        .icon2w3 {
+            width: 20px;
+            padding: 0px 5px 0px 7px;
+        }
+
+        .icon2w4 {
+            width: 20px;
+            padding: 0px 5px 0px 7px;
+        }
+
+        .icon2w5 {
+            width: 20px;
+            padding: 0px 5px 0px 7px;
+        }
+
+        .icon2w6 {
+            width: 20px;
+            padding: 0px 5px 0px 7px;
+        }
+
+        @media (max-width: 1135px) {
+            .block_s1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .block2 {
+                padding: 30px;
+            }
+
+            .price {
+                height: 1100px;
+            }
+
+        }
+
+        /* ============advantages============= */
+
+        .advantages {
+            background: #222222;
+        }
+
+        .container7 {
+            max-width: 1140px;
+            margin: 0px auto;
+        }
+
+        .img5 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .img55 {
+            width: 127px;
+            margin-top: 20px;
+            animation-name: kfr;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes kfr {
+            100% {
+                transform: translateY(18%);
+            }
+        }
+
+        .txt26 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .txt27 {
+            color: #F1F1F1;
+            font-family: 'Russo One', sans-serif;
+            font-size: 36px;
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+            max-width: 1140px;
+        }
+
+
+        .container8 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .img_cont {
+            padding: 5px;
+        }
+
+        .img6 {
+            width: 100%;
+            max-width: 124px;
+        }
+
+        .txt28 {
+            padding: 10px;
+        }
+
+        .txt29 {
+            max-width: 380px;
+            font-family: 'Russo One', sans-serif;
+            font-size: 24px;
+            color: #2194FF;
+        }
+
+        .txt30 {
+            max-width: 380px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            color: #F1F1F1;
+        }
+
+        .img7 {
+            width: 100%;
+            max-width: 65px;
+        }
+
+        .img8 {
+            width: 100%;
+            max-width: 111px;
+        }
+
+        .block_s2 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .center {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .img9 {
+            width: 100%;
+            max-width: 136px;
+        }
+
+        .img10 {
+            width: 100%;
+            max-width: 104px;
+        }
+
+        .img11 {
+            width: 100%;
+            max-width: 66px;
+        }
+
+        .img12 {
+            width: 100%;
+            max-width: 56px;
+        }
+
+        .img13 {
+            width: 100%;
+            max-width: 44px;
+        }
+
+        .img14 {
+            width: 100%;
+            max-width: 73px;
+        }
+
+        @media (max-width: 875px) {
+            .block_s2 {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+            .center {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+            .center {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .time1 {
+            padding: 10px;
+        }
+
+        .container9 {
+            max-width: 1140px;
+            margin: 0px auto;
+        }
+
+        .txt31 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .img15 {
+            width: 100%;
+            max-width: 628px;
+        }
+
+        .txt33 {
+            font-size: 35px;
+            font-family: 'Russo One', sans-serif;
+            color: #F1F1F1;
+            max-width: 533px;
+        }
+
+        .span3 {
+            color: #2194FF;
+        }
+
+        .txt34 {
+            font-size: 14px;
+        }
+
+        .txt35 {
+            background: rgba(33, 148, 255, 1);
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-family: 'Russo One', sans-serif;
+            color: #F1F1F1;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 1033px) {
+            .txt31 {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+            .txt31 {
+                display: flex;
+                justify-content: center;
+            }
+
+            .txt33 {
+                font-size: 25px;
+                font-family: 'Russo One', sans-serif;
+                color: #F1F1F1;
+                max-width: 533px;
+            }
+        }
+
+        /* =====================OBEM======================= */
+
+        .obem {
+            background: #2D3238;
+        }
+
+        .container10 {
+            max-width: 1140px;
+            margin: 0px auto;
+        }
+
+        .txt36 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .txt37 {
+            max-width: 1140px;
+            color: rgba(33, 148, 255, 1);
+            font-size: 36px;
+            font-family: 'Russo One', sans-serif;
+            margin-top: 10px;
+            padding: 10px;
+        }
+
+
+        .button_s2 {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .button4 {
+            width: 164px;
+            height: 64px;
+            font-size: 18px;
+            border-radius: 20px;
+            border: 0px;
+            background: rgba(33, 148, 255, 1);
+            font-family: 'Russo One', sans-serif;
+            color: #F1F1F1;
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.453);
+            transition-duration: 0.5s;
+        }
+
+        .button5 {
+            width: 164px;
+            height: 64px;
+            font-size: 18px;
+            border-radius: 20px;
+            border: 0px;
+            background: rgba(241, 241, 241, 0.2);
+            font-family: 'Russo One', sans-serif;
+            color: rgba(241, 241, 241, 1);
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.453);
+
+            transition-duration: 0.5s;
+        }
+
+        .button6 {
+            width: 164px;
+            height: 64px;
+            font-size: 18px;
+            border-radius: 20px;
+            border: 0px;
+            background: rgba(241, 241, 241, 0.2);
+            font-family: 'Russo One', sans-serif;
+            color: rgba(241, 241, 241, 1);
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.453);
+
+            transition-duration: 0.5s;
+        }
+
+        .button7 {
+            width: 164px;
+            height: 64px;
+            font-size: 18px;
+            border-radius: 20px;
+            border: 0px;
+            background: rgba(241, 241, 241, 0.2);
+            font-family: 'Russo One', sans-serif;
+            color: rgba(241, 241, 241, 1);
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.453);
+
+            transition-duration: 0.5s;
+        }
+
+        .img16 {
+            width: 100%;
+            max-width: 59px;
+            margin-top: 30px;
+
+        }
+
+        .img15_cont1 {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .button8 {
+            background: rgba(33, 148, 255, 1);
+            border: 0px;
+            font-size: 24px;
+            font-family: 'Russo One', sans-serif;
+            width: 295px;
+            height: 87px;
+            color: rgba(241, 241, 241, 1);
+            border: 4px solid #2194FF;
+            background: linear-gradient(45deg, #2194FF, #81C0FB, #0079C2);
+            box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.453);
+        }
+
+        .button8_cont1 {
+            display: flex;
+            justify-content: center;
+            padding: 10px 10px 30px 10px;
+        }
+
+        @media (max-width: 716px) {
+            .txt37 {
+                text-align: center;
+            }
+
+            .button4 {
+                width: 230px;
+            }
+
+            .button5 {
+                width: 230px;
+            }
+
+            .button6 {
+                width: 230px;
+            }
+
+            .button7 {
+                width: 230px;
+            }
+
+        }
+
+        .pd1 {
+            padding: 10px;
+        }
+
+        /* ==========swiper=============== */
+
+        .swiper {
+            max-width: 759px;
+
+        }
+
+        .container11 {
+            max-width: 920px;
+            margin: 0px auto;
+            display: flex;
+            align-items: center;
+
+
+
+        }
+
+
+
+        .container12 {
+            max-width: 759px;
+            margin: 0px auto;
+            background: #F1F1F1;
+            border-radius: 40px;
+            padding: 10px;
+
+            display: flex;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .img17 {
+            width: 100%;
+            max-width: 180px;
+            border-radius: 29px;
+            padding: 15px;
+        }
+
+        .txt38 {
+            padding: 15px;
+        }
+
+        .txt41 {
+            max-width: 380px;
+            font-family: 'Russo One', sans-serif;
+            color: #2194FF;
+            font-size: 24px;
+        }
+
+        .txt42 {
+            max-width: 164px;
+            font-family: 'Russo One', sans-serif;
+            color: #2D2D2D;
+            font-size: 18px;
+            margin-top: 4px;
+        }
+
+        .txt40 {
+            max-width: 445px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            line-height: 21px;
+            font-weight: 300;
+            margin-top: 15px;
+
+        }
+
+        .txt44 {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .txt45 {
+            margin-top: 10px;
+            max-width: 1140px;
+            font-size: 36px;
+            font-family: 'Russo One', sans-serif;
+            color: #F1F1F1;
+            padding: 10px;
+            margin-top: 30px;
+        }
+
+        .bullets {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            margin-top: 10px;
+            padding: 10px 0px 30px 0px;
+
+        }
+
+        .bullet-1 {
+            width: 61px;
+            background: #2194FF;
+            border: 0px;
+            height: 18px;
+            border-radius: 10px;
+        }
+
+        .bullet-2 {
+            width: 61px;
+            background: #F1F1F133;
+            border: 0px;
+            height: 18px;
+            border-radius: 10px;
+        }
+
+        .bullet-3 {
+            width: 61px;
+            background: #F1F1F133;
+            border: 0px;
+            height: 18px;
+            border-radius: 10px;
+        }
+
+        .bullet-4 {
+            width: 61px;
+            background: #F1F1F133;
+            border: 0px;
+            height: 18px;
+            border-radius: 10px;
+        }
+
+        .bullet-5 {
+            width: 61px;
+            background: #F1F1F133;
+            border: 0px;
+            height: 18px;
+            border-radius: 10px;
+        }
+
+        .pd2 {
+            padding: 0px 3px 0px 3px;
+        }
+
+        .next {
+            width: 100%;
+            max-width: 47px;
+        }
+
+        .prev {
+            width: 100%;
+            max-width: 47px;
+        }
+
+        .pd2-null {
+            opacity: 0;
+        }
+
+        .pd2-null2 {
+            opacity: 0;
+        }
+
+        @media (max-width: 1040px) {
+            .img17 {
+                display: none;
+            }
+
+            .next {
+                width: 100%;
+                max-width: 47px;
+                display: none;
+            }
+
+            .prev {
+                width: 100%;
+                max-width: 47px;
+                display: none;
+            }
+
+            .container11 {
+                padding: 10px;
+            }
+
+            .bullet-1 {
+                width: 50px;
+                border: 0px;
+                height: 18px;
+                border-radius: 10px;
+            }
+
+            .bullet-2 {
+                width: 50px;
+                border: 0px;
+                height: 18px;
+                border-radius: 10px;
+            }
+
+            .bullet-3 {
+                width: 50px;
+                border: 0px;
+                height: 18px;
+                border-radius: 10px;
+            }
+
+            .bullet-4 {
+                width: 50px;
+                border: 0px;
+                height: 18px;
+                border-radius: 10px;
+            }
+
+            .bullet-5 {
+                width: 50px;
+                border: 0px;
+                height: 18px;
+                border-radius: 10px;
+            }
+
+        }
+
+        /*======================responses====================== */
+
+        .responses {
+            background: #2D3238;
+            padding-bottom: 40px;
+        }
+
+        .container15 {
+            max-width: 1140px;
+            margin: 0px auto;
+            padding: 10px;
+        }
+
+
+        .txt48 {
+            font-family: 'Russo One';
+            font-size: 36px;
+            color: #2194FF;
+            padding: 35px 10px 35px 10px;
+            text-align: center;
+        }
+
+        .txt50 {
+            display: flex;
+            align-items: start;
+            border-top: 1px solid #FFFFFF1A;
+            border-bottom: 1px solid #FFFFFF1A;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .img19 {
+            background: url('Vector (18).png');
+            background-repeat: no-repeat;
+            width: 16px;
+            background-size: 15px;
+            color: rgba(255, 105, 180, 0);
+
+            transition-duration: 0.3s;
+
+        }
+
+
+
+        .txt52 {
+            font-size: 20px;
+            font-family: 'Open Sans';
+            font-weight: 700;
+            margin-left: 15px;
+            color: #F1F1F1;
+            max-width: 636px;
+        }
+
+        .txt53 {
+            font-size: 16px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            margin-left: 15px;
+            color: #F1F1F1;
+            max-width: 751px;
+            margin-top: 10px;
+
+
+            overflow: hidden;
+            height: 0px;
+            display: none;
+
+        }
+
+        .txt53_active {
+            font-size: 16px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            margin-left: 15px;
+            color: #F1F1F1;
+            max-width: 751px;
+            margin-top: 10px;
+
+
+            overflow: hidden;
+            height: 20px;
+            display: block;
+        }
+
+        .txt51_active {
+            color: #2194FF;
+        }
+
+        .img19_active {
+            background: url('Vector (20).png');
+            background-repeat: no-repeat;
+            width: 16px;
+            background-size: 15px;
+            color: rgba(255, 105, 180, 0);
+
+            transform: rotate(360deg);
+            transition-duration: 0.3s;
+        }
+
+
+
+        .img19W2 {
+            background: url('Vector (18).png');
+            background-repeat: no-repeat;
+            width: 16px;
+            background-size: 15px;
+            color: rgba(255, 105, 180, 0);
+
+            transition-duration: 0.3s;
+
+        }
+
+        .txt52W1 {
+            font-size: 20px;
+            font-family: 'Open Sans';
+            font-weight: 700;
+            margin-left: 15px;
+            color: #F1F1F1;
+            max-width: 636px;
+        }
+
+        .txt53W3 {
+            font-size: 16px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            margin-left: 15px;
+            color: #F1F1F1;
+            max-width: 751px;
+            margin-top: 10px;
+
+
+            overflow: hidden;
+            height: 0px;
+            display: none;
+        }
+
+        .img19W2_active {
+            background: url('Vector (20).png');
+            background-repeat: no-repeat;
+            width: 16px;
+            background-size: 15px;
+            color: rgba(255, 105, 180, 0);
+
+            transform: rotate(360deg);
+            transition-duration: 0.3s;
+        }
+
+        .txt51W1_active {
+            color: #2194FF;
+        }
+
+        .txt53W3_active {
+            font-size: 16px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            margin-left: 15px;
+            color: #F1F1F1;
+            max-width: 751px;
+            margin-top: 10px;
+
+
+            overflow: scroll;
+            height: 65px;
+            display: block;
+        }
+
+        .txt53W3_active::-webkit-scrollbar {
+            width: 0;
+        }
+
+        .txt53W4_active::-webkit-scrollbar {
+            width: 0;
+        }
+
+        .txt53WW2_active::-webkit-scrollbar {
+            width: 0;
+        }
+
+        .txt53WwW2_active::-webkit-scrollbar {
+            width: 0;
+        }
+
+
+        .img19W5 {
+            background: url('Vector (18).png');
+            background-repeat: no-repeat;
+            width: 16px;
+            background-size: 15px;
+            color: rgba(255, 105, 180, 0);
+
+            transition-duration: 0.3s;
+        }
+
+        .txt52W6 {
+            font-size: 20px;
+            font-family: 'Open Sans';
+            font-weight: 700;
+            margin-left: 15px;
+            color: #F1F1F1;
+            max-width: 636px
+        }
+
+        .txt53W4 {
+            font-size: 16px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            margin-left: 15px;
+            color: #F1F1F1;
+            max-width: 751px;
+            margin-top: 10px;
+
+
+            overflow: hidden;
+            height: 0px;
+            display: none;
+        }
+
+
+        .img19W5_active {
+            background: url('Vector (20).png');
+            background-repeat: no-repeat;
+            width: 16px;
+            background-size: 15px;
+            color: rgba(255, 105, 180, 0);
+
+            transform: rotate(360deg);
+            transition-duration: 0.3s;
+        }
+
+        .txt51W6_active {
+            color: #2194FF;
+        }
+
+        .txt53W4_active {
+            font-size: 16px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            margin-left: 15px;
+            color: #F1F1F1;
+            max-width: 751px;
+            margin-top: 10px;
+
+
+            overflow: scroll;
+            height: 65px;
+            display: block;
+        }
+
+        .img19WW3 {
+            background: url('Vector (18).png');
+            background-repeat: no-repeat;
+            width: 16px;
+            background-size: 15px;
+            color: rgba(255, 105, 180, 0);
+
+            transition-duration: 0.3s;
+        }
+
+        .txt52WW1 {
+            font-size: 20px;
+            font-family: 'Open Sans';
+            font-weight: 700;
+            margin-left: 15px;
+            color: #F1F1F1;
+            max-width: 636px
+        }
+
+        .txt53WW2 {
+            font-size: 16px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            margin-left: 15px;
+            color: #F1F1F1;
+            max-width: 751px;
+            margin-top: 10px;
+
+
+            overflow: hidden;
+            height: 0px;
+            display: none;
+        }
+
+
+
+        .img19WW3_active {
+            background: url('Vector (20).png');
+            background-repeat: no-repeat;
+            width: 16px;
+            background-size: 15px;
+            color: rgba(255, 105, 180, 0);
+
+            transform: rotate(360deg);
+            transition-duration: 0.3s;
+        }
+
+        .txt51WW1_active {
+            color: #2194FF;
+        }
+
+        .txt53WW2_active {
+            font-size: 16px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            margin-left: 15px;
+            color: #F1F1F1;
+            max-width: 751px;
+            margin-top: 10px;
+
+
+            overflow: scroll;
+            height: 65px;
+            display: block;
+
+        }
+
+
+        .img19WWW3 {
+            background: url('Vector (18).png');
+            background-repeat: no-repeat;
+            width: 16px;
+            background-size: 15px;
+            color: rgba(255, 105, 180, 0);
+
+            transition-duration: 0.3s;
+        }
+
+        .txt52WWW1 {
+            font-size: 20px;
+            font-family: 'Open Sans';
+            font-weight: 700;
+            margin-left: 15px;
+            color: #F1F1F1;
+            max-width: 636px
+        }
+
+        .txt53WwW2 {
+            font-size: 16px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            margin-left: 15px;
+            color: #F1F1F1;
+            max-width: 751px;
+            margin-top: 10px;
+
+
+            overflow: hidden;
+            height: 0px;
+            display: none;
+        }
+
+        .img19WWW3_active {
+            background: url('Vector (20).png');
+            background-repeat: no-repeat;
+            width: 16px;
+            background-size: 15px;
+            color: rgba(255, 105, 180, 0);
+
+            transform: rotate(360deg);
+            transition-duration: 0.3s;
+        }
+
+        .txt51WWW1_active {
+            color: #2194FF;
+        }
+
+        .txt53WwW2_active {
+            font-size: 16px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            margin-left: 15px;
+            color: #F1F1F1;
+            max-width: 751px;
+            margin-top: 10px;
+
+
+            overflow: scroll;
+            height: 65px;
+            display: block;
+        }
+
+        .open_txt {
+            padding: 0px 20px 0px 20px;
+        }
+
+        /* ===================footer================ */
+
+        footer {
+            background: #222222;
+        }
+
+        .container17 {
+            max-width: 1140px;
+            margin: 0px auto;
+
+            padding: 30px;
+        }
+
+        .txt54 {
+            max-width: 567px;
+            font-size: 36px;
+            font-family: 'Russo One';
+            color: #F1F1F1;
+        }
+
+        .input_cont1 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input1 {
+            max-width: 402px;
+            height: 51px;
+            border-radius: 10px;
+            color: #515151;
+            border: 1px solid #DEDEDE;
+            margin-top: 40px;
+            font-family: 'Open Sans';
+            padding-left: 10px;
+        }
+
+        .input2 {
+            max-width: 402px;
+            height: 51px;
+            border-radius: 10px;
+            color: #3c3c3c;
+            border: 1px solid #DEDEDE;
+            margin-top: 20px;
+            font-family: 'Open Sans';
+            padding-left: 10px;
+        }
+
+        textarea {
+            max-width: 402px;
+            height: 112px;
+            border-radius: 10px;
+            color: #3c3c3c;
+            border: 1px solid #DEDEDE;
+            margin-top: 30px;
+            margin-top: 20px;
+            font-family: 'Open Sans';
+            padding-left: 10px;
+            padding-top: 10px;
+
+            resize: none;
+        }
+
+        textarea::-webkit-scrollbar {
+            width: 0;
+        }
+
+        .button9 {
+            height: 47px;
+            width: 220px;
+            border-radius: 50px;
+            background: #2194FF;
+            color: #F1F1F1;
+            border: 0px;
+
+            font-family: 'Open Sans';
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 25px;
+            letter-spacing: 0em;
+            text-align: center;
+            margin-top: 20px;
+
+            background: #2194FF;
+            color: #F1F1F1;
+        }
+
+        .metka {}
+
+
+
+        .img1-2 {
+            width: 100%;
+            max-width: 366px;
+        }
+
+        .txt56 {
+            width: 209px;
+            padding: 23px;
+            border-radius: 20px;
+            opacity: 80%;
+            background-color: #2194FF;
+            border: 0px;
+
+            position: relative;
+            bottom: 140px;
+            right: 50px;
+
+        }
+
+        .txt57 {
+            height: 29px;
+            width: 118px;
+            font-family: 'Russo One';
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 29px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #F1F1F1;
+
+
+        }
+
+        .txt58 {
+            height: 22px;
+            width: 162px;
+            font-family: 'Open Sans';
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 22px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #F1F1F1;
+        }
+
+        .form {
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+
+
+        .img_company_cont1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 20px;
+
+
+
+
+        }
+
+        .img_company1 {
+            width: 100%;
+            max-width: 100px;
+            object-fit: contain;
+        }
+
+        .img-company1_cont1 {
+            height: 66px;
+            width: 166px;
+            left: 422px;
+            top: 4664px;
+            border-radius: 20px;
+            background: #F1F1F1;
+            display: flex;
+            justify-content: center;
+
+            margin: 10px;
+
+        }
+
+        .img-company2_cont2 {
+            height: 66px;
+            width: 166px;
+            left: 422px;
+            top: 4664px;
+            border-radius: 20px;
+            background: #F1F1F1;
+            display: flex;
+            justify-content: center;
+
+            margin: 10px;
+        }
+
+        .img-company3_cont3 {
+            height: 66px;
+            width: 166px;
+            left: 422px;
+            top: 4664px;
+            border-radius: 20px;
+            background: #F1F1F1;
+            display: flex;
+            justify-content: center;
+
+            margin: 10px;
+        }
+
+        .img-company4_cont4 {
+            height: 66px;
+            width: 166px;
+            left: 422px;
+            top: 4664px;
+            border-radius: 20px;
+            background: #F1F1F1;
+            display: flex;
+            justify-content: center;
+
+            margin: 10px;
+        }
+
+        .img-company5_cont5 {
+            height: 66px;
+            width: 166px;
+            left: 422px;
+            top: 4664px;
+            border-radius: 20px;
+            background: #F1F1F1;
+            display: flex;
+            justify-content: center;
+
+            margin: 10px;
+        }
+
+        .img-company6_cont6 {
+            height: 66px;
+            width: 166px;
+            left: 422px;
+            top: 4664px;
+            border-radius: 20px;
+            background: #F1F1F1;
+            display: flex;
+            justify-content: center;
+
+            margin: 10px;
+        }
+
+
+        .txt60 {
+            max-width: 1140px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+
+            font-family: 'Russo One';
+            font-size: 36px;
+            font-weight: 400;
+            text-align: center;
+            color: #2194FF;
+            margin-top: 20px;
+
+        }
+
+        .button10_cont1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .button10 {
+            background: #2194FF;
+            height: 87px;
+            width: 295px;
+            border-radius: 11px;
+
+            font-family: 'Russo One';
+            font-size: 24px;
+            font-weight: 400;
+            text-align: center;
+            color: #F1F1F1;
+            margin-top: 20px;
+            border: 4px solid #2194FF;
+            background: linear-gradient(45deg, #2194FF, #81C0FB, #0079C2);
+            box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.453);
+
+        }
+
+
+
+        .google_map-cont1 {
+            background: #F1F1F1;
+            border-radius: 33px;
+            display: flex;
+            margin-top: 30px;
+
+        }
+
+        .container19 {
+            padding: 20px;
+            width: 100%;
+        }
+
+        .txt62 {
+            font-family: 'Russo One';
+            font-size: 36px;
+            font-weight: 400;
+            line-height: 43px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: #2194FF;
+            max-width: 380px;
+
+        }
+
+        .txt63 {
+            font-family: 'Open Sans';
+            color: #1B2639;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            max-width: 446px;
+
+            border-bottom: 1px solid #1B263933;
+            padding-bottom: 20px;
+
+        }
+
+        .txt65 {
+            margin-top: 25px;
+        }
+
+        .txt66 {
+            font-family: 'Open Sans';
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 25px;
+            letter-spacing: 0em;
+            text-align: left;
+            max-width: 57px;
+            color: #2194FF;
+
+        }
+
+        .txt67 {
+            max-width: 490px;
+            font-family: 'Open Sans';
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 25px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #1B2639;
+
+        }
+
+        .txt68 {
+            margin-top: 25px;
+        }
+
+        .txt69 {
+            color: #2194FF;
+            max-width: 93px;
+            font-family: Open Sans;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 25px;
+            letter-spacing: 0em;
+            text-align: left;
+
+        }
+
+        .txt70 {
+            max-width: 490px;
+            font-family: 'Open Sans';
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25px;
+            letter-spacing: 0em;
+            text-align: left;
+
+        }
+
+        iframe {
+            border-radius: 30px;
+            width: 100%;
+
+        }
+
+
+        .txt71 {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .txt72 {
+            padding: 10px;
+        }
+
+        .ins2 {
+            font-family: 'Open Sans';
+            font-size: 14px;
+            font-weight: 400;
+            text-align: left;
+            height: 19px;
+            width: 317px;
+            color: #F1F1F1;
+
+
+        }
+
+        .txt73 {
+            padding: 10px;
+        }
+
+        .ins3 {
+            font-family: 'Open Sans';
+            font-size: 14px;
+            font-weight: 400;
+            text-align: left;
+            height: 19px;
+            width: 317px;
+            color: #F1F1F1;
+        }
+
+        @media (max-width: 900px) {
+            .form_img {
+                display: none;
+            }
+
+            .txt54 {
+                font-size: 24px;
+            }
+
+            .txt49 {
+                font-size: 24px;
+            }
+
+            .img_company_cont1 {
+                display: flex;
+                justify-content: center;
+            }
+
+            .txt60 {
+                font-size: 25px;
+            }
+
+            .google_map-cont1 {
+                display: flex;
+                flex-wrap: wrap;
+
+            }
+
+            .txt71 {
+                display: flex;
+                justify-content: center;
+            }
+
+        }
+
+
+        .fone {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.671);
+            width: 100%;
+            height: 100000000000px;
+            z-index: 2;
+
+            display: none;
+        }
+
+        .alert {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            max-width: 462px;
+            height: 408px;
+            background: #ffffff;
+            border-radius: 33px;
+            opacity: 0.9;
+            padding: 10px;
+
+        }
+
+        .txt73 {}
+
+        .txts1 {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            margin-top: 15px;
+
+        }
+
+        .txt74 {
+            width: 364px;
+            font-family: 'Russo One';
+            font-size: 28px;
+            font-weight: 400;
+            text-align: left;
+            color: #2194FF;
+            padding: 0px 10px 0px 0px;
+
+
+        }
+
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .input3 {
+            border-radius: 10px;
+            width: 100%;
+            max-width: 402px;
+            height: 51px;
+
+            font-family: 'Open Sans';
+            font-size: 13px;
+            font-weight: 400;
+            text-align: left;
+            text-indent: 15px;
+            border: 1px solid #DEDEDE;
+            box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+            margin-top: 20px;
+
+        }
+
+        .input4 {
+            border-radius: 10px;
+            width: 100%;
+            max-width: 402px;
+            height: 51px;
+
+            font-family: 'Open Sans';
+            font-size: 13px;
+            font-weight: 400;
+            text-align: left;
+            text-indent: 15px;
+            border: 1px solid #DEDEDE;
+            box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+            margin-top: 20px;
+        }
+
+        .buttons2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .button11 {
+            height: 87px;
+            max-width: 361px;
+            left: 779px;
+            top: 543px;
+            border-radius: 11px;
+            font-family: 'Russo One';
+            font-size: 24px;
+            font-weight: 400;
+            text-align: center;
+            border: 4px solid #2194FF;
+            background: linear-gradient(45deg, #2194FF, #81C0FB, #0079C2);
+            box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.453);
+            color: #F1F1F1;
+            margin-top: 50px;
+        }
+
+        .close {
+            width: 100%;
+            max-width: 25px;
+            padding: 10px;
+        }
+
+        /* ===========animation============= */
+        .txt27 {
+            font-size: 0px;
+        }
+
+        .prev {
+            position: relative;
+            right: 6000px;
+        }
+
+        .next {
+            position: relative;
+            right: -6000px;
+        }
+
+        .body {
+            overflow-x: hidden;
+        }
+
+
+        .txt33 {
+            position: relative;
+            top: 50px
+        }
+
+        .txt35 {
+            position: relative;
+            bottom: 180px;
+        }
+    </style>
+</head>
+
+
+
+<body class="body">
+
+
+    <div class="wrapper">
+        <div class="header">
+            <div class="content">
+                <div class="container">
+
+                    <div class="menu">
+                        <div class="logo">
+                            <img class='logo_img' alt='' src='Logo.png'>
+
+                            <div class="txt1">
+                                <div class="txt2">Расправь плечи <br>
+                                    в теплом доме
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tel">
+                            <div class="txt3">+7 926 330-68-34
+                            </div>
+                            <div class="txt4">
+                                <ins>Срочный вопрос</ins>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========content============== -->
+                <selection class="selection">
+                    <div class="selection_content">
+                        <div class="selection_container">
+                            <div class="selection_body">
+                                <div class="txt5">
+
+                                    <div class="txt6">
+                                        <div class="icon1">
+                                            <img src="Vector (16)2.png" alt="" class="icon2w1">
+                                            <img src="Vector (17)4.png" alt="" class="icon2w3">
+                                            <img src="Group (1)6.png" alt="" class="icon2w6">
+                                        </div>
+                                        <div class="txt7">В любое время дня и ночи</div>
+                                    </div>
+
+                                    <div class="txt6">
+                                        <div class="icon1">
+                                            <img src="Group5.png" alt="" class="icon2w5">
+                                            <img src="Vector (17)4.png" alt="" class="icon2w4">
+                                            <img src="Vector (16)3.png" alt="" class="icon2w2">
+                                        </div>
+                                        <div class="txt7-2">Вне зависимости от погодных условий
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="txt8">Доставим газ<br>
+                                    за 4 часа</div>
+
+                                <div class="txt9">в любую точку Москвы <br>
+                                    и Московской области</div>
+                                <div class="buttons">
+                                    <button class="button1">Заказать доставку газа <br>
+                                        в газгольдер</button>
+                                    <div class="txt10">Доставка газа всегда по актуальным ценам</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="selection_image">
+                        <img src="1stscreen 1.png" alt="" class="img2">
+                    </div>
+                </selection>
+
+            </div>
+        </div>
+
+        <div class="price">
+            <div class="container2">
+
+                <div class="txt11">
+                    <div class="txt12">
+                        Стоимость газа в ваш газгольдер сегодня
+                    </div>
+                </div>
+
+                <div class="block_s1">
+
+                    <div class="block1">
+
+                        <div class="cont1">
+
+                            <div class="txt13">Пропан</div>
+
+                            <div class="txt14">от 25 рублей за литр
+
+                            </div>
+
+                            <div class="txt15">Физически испарение <br> происходит до -40 градусов, что <br> позволяет
+                                использовать его в наших с
+                                вами погодных <br> условиях</div>
+
+                        </div>
+
+                        <button class="button2">Заказать</button>
+
+                    </div>
+
+                    <div class="block2">
+
+                        <div class="txt16">Идеальное соотношение</div>
+
+                        <div class="txt17">
+                            <div class="txt18">
+                                <div class="txt19">
+                                    <div class="txt22">80%</div>
+                                    <div class="span1">пропана
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="txt19w">
+                                <div class="txt20w">
+                                    <div class="txt24">20%</div>
+                                    <div class="span2">бутана
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <img class='car2' alt='' src='proportions 1.png'>
+
+                    </div>
+
+
+                    <div class="block3">
+
+                        <div class="cont1">
+                            <div class="txt13">Бутан</div>
+
+                            <div class="txt14">от 16 рублей за литр
+                            </div>
+
+                            <div class="txt15">Испарение Бутана происходит только до 0 градусов и годится для
+                                использования в тёплое время года</div>
+
+                        </div>
+
+                        <button class="button2">Заказать</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ================advantages================= -->
+
+        <div class="advantages">
+            <div class="container7">
+                <div class="img5">
+                    <img src="Group 7.png" alt="" class="img55">
+                </div>
+
+                <div class="txt26">
+                    <div class="txt27">Преимущества работы с нашей компанией
+
+                    </div>
+                </div>
+
+                <div class="block_s2">
+                    <div class="center">
+                        <div class="block3">
+                            <div class="block6">
+
+                                <div class="animate1">
+                                    <div class="container8">
+                                        <div class="img_cont">
+                                            <img src="04 2.png" alt="" class="img6">
+                                        </div>
+
+                                        <div class="txt28">
+                                            <div class="txt29">Экономия<br>
+                                                на хранилище </div>
+                                            <div class="txt30">за счёт собственных цистерн <br>
+                                                на нашей базе</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- ===================== -->
+
+                            <div class="block6">
+                                <div class="animate2">
+                                    <div class="container8">
+                                        <div class="img_cont">
+                                            <img src="baloon 1.png" alt="" class="img7">
+                                        </div>
+
+                                        <div class="txt28">
+                                            <div class="txt29">Любые объёмы поставки качественного газа</div>
+                                            <div class="txt30">вы получаете объем от 1 тонны до 20 тонн, с сертификатом
+                                                качества газа</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ========================== -->
+                            <div class="block6">
+                                <div class="animate3">
+                                    <div class="container8">
+                                        <div class="img_cont">
+                                            <img src="50m 1.png" alt="" class="img8">
+                                        </div>
+
+                                        <div class="txt28">
+                                            <div class="txt29">Длина заправочных <br>
+                                                рукавов — 50 метров</div>
+                                            <div class="txt30">не требуется подъезд автомобиля <br> вплотную к
+                                                резервуару</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- ==================== -->
+
+                        <div class="block4">
+                            <!-- ====================== -->
+                            <div class="block6">
+                                <div class="animate4">
+
+                                    <div class="container8">
+                                        <div class="img_cont">
+                                            <img src="track 1.png" alt="" class="img9">
+                                        </div>
+
+                                        <div class="txt28">
+                                            <div class="txt29">Экономия<br>
+                                                на транспорте</div>
+                                            <div class="txt30">более 10 собственный газовозов</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ================ -->
+                            <div class="block6">
+                                <div class="animate5">
+                                    <div class="container8">
+                                        <div class="img_cont">
+                                            <img src="Frame (2).png" alt="" class="img10">
+                                        </div>
+
+                                        <div class="txt28">
+                                            <div class="txt29">Оплата удобным <br>
+                                                для вас способом</div>
+                                            <div class="txt30">все газовозы оснащены терминалами для оплаты вашего
+                                                заказа</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- =============== -->
+                            <div class="block6">
+                                <div class="animate6">
+                                    <div class="container8">
+                                        <div class="img_cont">
+                                            <img src="timer 1.png" alt="" class="img11">
+                                        </div>
+
+                                        <div class="txt28">
+                                            <div class="txt29">Доставка сжиженного газа
+                                                в формате 24/7</div>
+                                            <div class="txt30">привезем газ в удобное для вас время <br> или же по
+                                                графику</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ============================= -->
+                        </div>
+                        <!-- ========================== -->
+                        <div class="block5">
+                            <!-- =======================- -->
+                            <div class="block6">
+                                <div class="animate7">
+                                    <div class="container8">
+                                        <div class="img_cont">
+                                            <img src="calc 1.png" alt="" class="img12">
+                                        </div>
+
+                                        <div class="txt28">
+                                            <div class="txt29">Поставки напрямую <br>
+                                                от производителей</div>
+                                            <div class="txt30">нет наценки на стоимость газа как у перекупщиков и
+                                                небольших частных компаний</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ======================== -->
+                            <div class="block6">
+                                <div class="animate8">
+                                    <div class="container8">
+                                        <div class="img_cont">
+                                            <img src="Frame (1).png" alt="" class="img13">
+                                        </div>
+
+                                        <div class="txt28">
+                                            <div class="txt29">Чистый газ <br>
+                                                без примесей</div>
+                                            <div class="txt30">нет наценки на стоимость газа как у перекупщиков и
+                                                небольших частных компаний</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ===================== -->
+                            <div class="block6">
+                                <div class="animate9">
+                                    <div class="container8">
+                                        <div class="img_cont">
+                                            <img src="sert 1.png" class="img14">
+                                        </div>
+
+                                        <div class="txt28">
+                                            <div class="txt29">Аттестованный <br>
+                                                персонал</div>
+                                            <div class="txt30">квалифицированные сотрудники проведут полную консультацию
+                                                и дадут рекомендации, если такие нужны будут</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ================= -->
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- ======================================== -->
+
+            <div class="time1">
+                <div class="container9">
+                    <div class="txt31">
+                        <div class="img15_cont">
+                            <img src="transp 1.png" alt="" class="img15">
+                        </div>
+
+                        <div class="txt32">
+                            <div class="txt33">Благодаря нашему собственному автопарку мы можем
+                                давать гарантию, что доставим <span class="span3">за 4 часа</span></div>
+                            <div class="txt35">
+                                <div class="txt34">Это сильное конкурентное преимущество, которым мы дорожим</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==============================obem======================================= -->
+
+            <div class="obem">
+                <div class="container10">
+                    <div class="txt36">
+                        <div class="txt37">Выберите свой объём Газовоза</div>
+                    </div>
+
+                    <div class="button_s2">
+
+                        <div class="pd1">
+                            <button class="button4">
+                                Малый <br> 2000 л.
+                            </button>
+                        </div>
+
+                        <div class="pd1">
+                            <button class="button5">
+                                Средний <br> 6000 л.
+                            </button>
+                        </div>
+
+                        <div class="pd1">
+                            <button class="button6">
+                                Стандартный <br> 10 000 л.
+                            </button>
+                        </div>
+
+                        <div class="pd1">
+                            <button class="button7">
+                                Оптовый <br> 40 000 л.
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="img15_cont1">
+                        <img src="01 2.png" alt="" class="img16">
+                    </div>
+
+
+                    <div class="button8_cont1">
+                        <button class="button8">Заказать газ</button>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- ===================swiper================= -->
+
+            <div class="txt44">
+                <div class="txt45">Отзывы наших клиентов</div>
+            </div>
+
+            <div class="container11">
+
+                <div class="prev_cont4">
+                    <img src="button-prev.png" alt="" class="prev">
+                </div>
+
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="container12">
+                                <div class="img17_cont3">
+                                    <img src="Валентина В 1.png" alt="" class="img17">
+                                </div>
+
+                                <div class="txt38">
+                                    <div class="txt39">
+                                        <div class="txt41">Ольга И.</div>
+                                        <div class="txt42">Красногорск</div>
+                                    </div>
+                                    <div class="txt40">Я всегда боюсь газа , а особенно боюсь что он может взорваться,
+                                        как же мне помог Андрей водитель-экспедитор показал что бояться тут нечего и
+                                        самое главное моего присутствие даже не понадобится. Спасибо компании за то что
+                                        они все закрыли этот вопрос под ключ.</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="pd4">
+                                <div class="container12">
+                                    <div class="img17_cont3">
+                                        <img src="Валентина В 1.png" alt="" class="img17">
+                                    </div>
+
+                                    <div class="txt38">
+                                        <div class="txt39">
+                                            <div class="txt41">Ольга И.</div>
+                                            <div class="txt42">Красногорск</div>
+                                        </div>
+                                        <div class="txt40">Я всегда боюсь газа , а особенно боюсь что он может
+                                            взорваться, как же мне помог Андрей водитель-экспедитор показал что бояться
+                                            тут нечего и самое главное моего присутствие даже не понадобится. Спасибо
+                                            компании за то что они все закрыли этот вопрос под ключ.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container12">
+                                <div class="img17_cont3">
+                                    <img src="Валентина В 1.png" alt="" class="img17">
+                                </div>
+
+                                <div class="txt38">
+                                    <div class="txt39">
+                                        <div class="txt41">Ольга И.</div>
+                                        <div class="txt42">Красногорск</div>
+                                    </div>
+                                    <div class="txt40">Я всегда боюсь газа , а особенно боюсь что он может взорваться,
+                                        как же мне помог Андрей водитель-экспедитор показал что бояться тут нечего и
+                                        самое главное моего присутствие даже не понадобится. Спасибо компании за то что
+                                        они все закрыли этот вопрос под ключ.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container12">
+                                <div class="img17_cont3">
+                                    <img src="Валентина В 1.png" alt="" class="img17">
+                                </div>
+
+                                <div class="txt38">
+                                    <div class="txt39">
+                                        <div class="txt41">Ольга И.</div>
+                                        <div class="txt42">Красногорск</div>
+                                    </div>
+                                    <div class="txt40">Я всегда боюсь газа , а особенно боюсь что он может взорваться,
+                                        как же мне помог Андрей водитель-экспедитор показал что бояться тут нечего и
+                                        самое главное моего присутствие даже не понадобится. Спасибо компании за то что
+                                        они все закрыли этот вопрос под ключ.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container12">
+                                <div class="img17_cont3">
+                                    <img src="Валентина В 1.png" alt="" class="img17">
+                                </div>
+
+                                <div class="txt38">
+                                    <div class="txt39">
+                                        <div class="txt41">Ольга И.</div>
+                                        <div class="txt42">Красногорск</div>
+                                    </div>
+                                    <div class="txt40">Я всегда боюсь газа , а особенно боюсь что он может взорваться,
+                                        как же мне помог Андрей водитель-экспедитор показал что бояться тут нечего и
+                                        самое главное моего присутствие даже не понадобится. Спасибо компании за то что
+                                        они все закрыли этот вопрос под ключ.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="next_cont5">
+                    <img src="button-next.png" alt="" class="next">
+                </div>
+            </div>
+
+            <div class="bullets">
+                <div class="pd2-null2">
+                    <button class="bullet-5=null"></button>
+                </div>
+                <div class="pd2">
+                    <button class="bullet-1"></button>
+                </div>
+                <div class="pd2">
+                    <button class="bullet-2"></button>
+                </div>
+                <div class="pd2">
+                    <button class="bullet-3"></button>
+                </div>
+                <div class="pd2">
+                    <button class="bullet-4"></button>
+                </div>
+                <div class="pd2">
+                    <button class="bullet-5"></button>
+                </div>
+                <div class="pd2-null">
+                    <button class="bullet-5=null"></button>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- ==========responses========= -->
+
+        <div class="responses">
+            <div class="container15">
+                <div class="txt47">
+
+                    <div class="txt48">
+                        <div class="txt49">Ответы на часто задаваемые вопросы</div>
+                    </div>
+
+                    <div class="open_txt">
+                        <div class="txt50">
+                            <div class="img9_cont3">
+                                <div class="img19">.</div>
+                            </div>
+
+                            <div class="txt51">
+                                <div class="txt52">Есть ли у вас инженеры в компании?</div>
+
+                                <div class="txt53">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor velit
+                                    hic doloribus doloremque eos minima facere repudiandae ab at et?</div>
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="open_txt">
+                        <div class="txt50">
+                            <div class="img9_cont3">
+                                <div class="img19W2">.</div>
+                            </div>
+
+                            <div class="txt51">
+                                <div class="txt52W1">Делаете ли вы отчистку газгольдера?</div>
+
+                                <div class="txt53W3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                                    consequuntur ratione facilis fugiat deleniti eum sit rerum commodi repellendus
+                                    reprehenderit?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+                                    commodi!lorem10
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="open_txt">
+                        <div class="txt50">
+                            <div class="img9_cont3">
+                                <div class="img19W5">.</div>
+                            </div>
+
+                            <div class="txt51">
+                                <div class="txt52W6">А вы не испортите газон у меня и соседей?</div>
+
+                                <div class="txt53W4">За счёт длинны в 50 м. делаем заправку не заезжая и не портим
+                                    газон, а так же не мешаем соседям</div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="open_txt">
+                        <div class="txt50">
+                            <div class="img9_cont3">
+                                <div class="img19WW3">.</div>
+                            </div>
+
+                            <div class="txt51">
+                                <div class="txt52WW1">Вы предоставляете документы для субсидий?</div>
+
+                                <div class="txt53WW2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
+                                    unde provident reprehenderit et, iste explicabo nihil totam, id nulla voluptas animi
+                                    minima aspernatur ratione adipisci excepturi aliquid quibusdam, corporis asperiores
+                                    qui. Eveniet molestias soluta nostrum reiciendis, at quidem a asperiores dolore,
+                                    atque aspernatur cupiditate, vel nobis corporis hic eos ipsa. Dignissimos, magnam.
+                                    Maiores ad, possimus voluptates vitae quasi officia laboriosam, eos amet tempora non
+                                    ab cumque laudantium fugiat quam et accusantium quaerat saepe ipsam suscipit porro
+                                    quae, quidem esse rerum? Possimus ad veniam veritatis! Officia modi eos
+                                    reprehenderit eius.</div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="open_txt">
+                        <div class="txt50">
+                            <div class="img9_cont3">
+                                <div class="img19WWW3">.</div>
+                            </div>
+
+                            <div class="txt51">
+                                <div class="txt52WWW1">Смогу ли я заказать во время праздников?</div>
+
+                                <div class="txt53WwW2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
+                                    unde provident reprehenderit et, iste explicabo nihil totam, id nulla voluptas animi
+                                    minima aspernatur ratione adipisci excepturi aliquid quibusdam, corporis asperiores
+                                    qui. Eveniet molestias soluta nostrum reiciendis, at quidem a asperiores dolore,
+                                    atque aspernatur cupiditate, vel nobis corporis hic eos ipsa. Dignissimos, magnam.
+                                    Maiores ad, possimus voluptates vitae quasi officia laboriosam, eos amet tempora non
+                                    ab cumque laudantium fugiat quam et accusantium quaerat saepe ipsam suscipit porro
+                                    quae, quidem esse rerum? Possimus ad veniam veritatis! Officia modi eos
+                                    reprehenderit eius.</div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="container17">
+                <div class="form">
+
+                    <div class="content_cont1">
+                        <div class="txt54">
+                            <div class="txt55">Не нашли ответа на свой вопрос задайте их нашему специалисту </div>
+                        </div>
+
+                        <div class="input_cont1">
+                            <input type="text" class="input1" placeholder="имя">
+                            <input type="text" class="input2" placeholder="Телефон">
+                            <textarea placeholder="ваш вопрос"></textarea>
+                            <button class="button9">Задать вопрос</button>
+                        </div>
+                    </div>
+
+                    <div class="form_img">
+                        <img class='img1-2' alt='' src='image 1 (2).png'>
+                        <div class="txt56">
+                            <div class="txt57">Роман Ш.</div>
+                            <div class="txt58">Старший менеджер</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="company">
+                    <div class="img_company_cont1">
+
+                        <div class="img-company1_cont1">
+                            <img src="роснефть 1.png" alt="" class="img_company1">
+                        </div>
+
+                        <div class="img-company2_cont2">
+                            <img src="image 3 (1).png" alt="" class="img_company1">
+                        </div>
+
+                        <div class="img-company3_cont3">
+                            <img src="транснефть 1.png" alt="" class="img_company1">
+                        </div>
+
+                        <div class="img-company4_cont4">
+                            <img src="Frame (7).png" alt="" class="img_company1">
+                        </div>
+
+                        <div class="img-company5_cont5">
+                            <img src="Frame (6).png" alt="" class="img_company1">
+                        </div>
+
+                        <div class="img-company6_cont6">
+                            <img src="image 4.png" alt="" class="img_company1">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="map">
+                    <div class="txt59">
+                        <div class="txt60">Закажи прямо сейчас и получи <br>
+                            бесплатную установку телеметрии</div>
+                        <div class="button10_cont1">
+                            <button class="button10">Заказать газ</button>
+                        </div>
+                    </div>
+
+                    <div class="google_map-cont1">
+                        <div class="container19">
+
+                            <div class="txt61">
+                                <div class="txt62">Посетите наш уютный офис</div>
+                                <div class="txt63">где мы сможем вас полностью
+                                    проконсультировать по всем вопросам</div>
+                            </div>
+
+                            <div class="txt64">
+                                <div class="txt65">
+                                    <div class="txt66">Офис</div>
+                                    <div class="txt67">Видное , Белокаменное шоссе, 20</div>
+                                </div>
+
+                                <div class="txt68">
+                                    <div class="txt69">Телефон:</div>
+                                    <div class="txt70">+7 926 330-68-34</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1329734.8451925248!2d25.58094555!3d49.3873745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1668786806636!5m2!1sru!2sua"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="txt71">
+                    <div class="txt72">
+                        <ins class="ins2">Согласие на обработку персональных данных</ins>
+                    </div>
+                    <div class="txt73">
+                        <ins class="ins3">Согласие на обработку персональных данных</ins>
+                    </div>
+                </div>
+
+            </div>
+
+        </footer>
+
+
+
+        <!-- =================alert================== -->
+
+        <div class="fone">
+
+            <div class="alert">
+                <div class="txt73">
+
+                    <div class="txts1">
+                        <div class="txt74">Доставим газ <br>
+                            за 4 часа</div>
+                        <div class="close_cont1">
+                            <img src="Vector 1.png" alt="" class="close">
+                        </div>
+                    </div>
+
+                    <div class="inputs">
+                        <input type="text" class="input3" placeholder="ИМЯ">
+                        <input type="text" class="input4" placeholder="ТЕЛЕФОН">
+                    </div>
+
+                    <div class="buttons2">
+                        <button class="button11">Заказать доставку газа</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css' />
+        <script src='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js'></script>
+
+        <script>
+            // https://www.figma.com/file/ctsibmU3AefRkMLxcQU4XF/%D0%90%D1%82%D0%BB%D0%B0%D0%BD%D1%82-%D0%93%D0%B0%D0%B7-%2B?node-id=2%3A2
+
+            let button4 = document.querySelector('.button4');
+            let button5 = document.querySelector('.button5');
+            let button6 = document.querySelector('.button6');
+            let button7 = document.querySelector('.button7');
+            let img16 = document.querySelector('.img16');
+
+
+            button4.addEventListener('click', function () {
+                button4.style.background = 'rgba(33, 148, 255, 1)'
+
+                button5.style.background = 'rgba(241, 241, 241, 0.2)'
+                button6.style.background = 'rgba(241, 241, 241, 0.2)'
+                button7.style.background = 'rgba(241, 241, 241, 0.2)'
+                button4.style.transitionDuration = '0.5'
+
+                img16.src = '01 2.png'
+
+            })
+
+
+
+            button5.addEventListener('click', function () {
+                button5.style.background = 'rgba(33, 148, 255, 1)'
+
+                button4.style.background = 'rgba(241, 241, 241, 0.2)'
+                button6.style.background = 'rgba(241, 241, 241, 0.2)'
+                button7.style.background = 'rgba(241, 241, 241, 0.2)'
+                button5.style.transitionDuration = '0.5'
+
+                img16.src = '02 1.png'
+                img16.maxWidth = '477px'
+
+            })
+
+            button6.addEventListener('click', function () {
+                button6.style.background = 'rgba(33, 148, 255, 1)'
+                button5.style.background = 'rgba(241, 241, 241, 0.2)'
+                button4.style.background = 'rgba(241, 241, 241, 0.2)'
+                button7.style.background = 'rgba(241, 241, 241, 0.2)'
+                button6.style.transitionDuration = '0.5'
+
+                img16.src = '03 1.png'
+                img16.maxWidth = '466px'
+
+            })
+
+            button7.addEventListener('click', function () {
+                button7.style.background = 'rgba(33, 148, 255, 1)'
+
+                button6.style.background = 'rgba(33, 148, 255, 1)'
+                button5.style.background = 'rgba(241, 241, 241, 0.2)'
+                button4.style.background = 'rgba(241, 241, 241, 0.2)'
+                button6.style.background = 'rgba(241, 241, 241, 0.2)'
+                button7.style.transitionDuration = '0.5'
+
+                img16.src = '04 2.png'
+                img16.maxWidth = '364px'
+
+            })
+
+            // =================swiper================
+
+            let swiper = new Swiper('.swiper', {
+                loop: true,
+                allowTouchMove: false,
+                effect: 'coverflow',
+            })
+
+            let bullet1 = document.querySelector('.bullet-1')
+            let bullet2 = document.querySelector('.bullet-2')
+            let bullet3 = document.querySelector('.bullet-3')
+            let bullet4 = document.querySelector('.bullet-4')
+            let bullet5 = document.querySelector('.bullet-5')
+
+            bullet1.addEventListener('click', function () {
+                bullet1.style.background = '#2194FF'
+                bullet2.style.background = '#F1F1F133'
+                bullet3.style.background = '#F1F1F133'
+                bullet4.style.background = '#F1F1F133'
+                bullet5.style.background = '#F1F1F133'
+
+                swiper.slideTo(1)
+
+            })
+
+            bullet2.addEventListener('click', function () {
+                swiper.slideTo(2)
+                bullet2.style.background = '#2194FF'
+                bullet1.style.background = '#F1F1F133'
+                bullet3.style.background = '#F1F1F133'
+                bullet4.style.background = '#F1F1F133'
+                bullet5.style.background = '#F1F1F133'
+            })
+
+            bullet3.addEventListener('click', function () {
+                swiper.slideTo(3)
+                bullet3.style.background = '#2194FF'
+
+                bullet2.style.background = '#F1F1F133'
+                bullet1.style.background = '#F1F1F133'
+                bullet4.style.background = '#F1F1F133'
+                bullet5.style.background = '#F1F1F133'
+            })
+
+            bullet4.addEventListener('click', function () {
+                swiper.slideTo(4)
+                bullet4.style.background = '#2194FF'
+
+                bullet3.style.background = '#F1F1F133'
+                bullet2.style.background = '#F1F1F133'
+                bullet1.style.background = '#F1F1F133'
+                bullet5.style.background = '#F1F1F133'
+            })
+
+            bullet5.addEventListener('click', function () {
+                swiper.slideTo(5)
+                bullet5.style.background = '#2194FF'
+
+                bullet4.style.background = '#F1F1F133'
+                bullet3.style.background = '#F1F1F133'
+                bullet2.style.background = '#F1F1F133'
+                bullet1.style.background = '#F1F1F133'
+            })
+
+            let prev = document.querySelector('.prev')
+            let next = document.querySelector('.next')
+
+
+
+            prev.addEventListener('click', function () {
+                swiper.slidePrev()
+                if (swiper.activeIndex == 1) {
+                    bullet1.style.background = '#2194FF'
+                    bullet2.style.background = '#F1F1F133'
+                } else if (swiper.activeIndex == 2) {
+                    bullet2.style.background = '#2194FF'
+                    bullet3.style.background = '#F1F1F133'
+                } else if (swiper.activeIndex == 3) {
+                    bullet3.style.background = '#2194FF'
+                    bullet4.style.background = '#F1F1F133'
+                } else if (swiper.activeIndex == 4) {
+                    bullet4.style.background = '#2194FF'
+                    bullet5.style.background = '#F1F1F133'
+                } else if (swiper.activeIndex == 5) {
+                    bullet5.style.background = '#2194FF'
+                    bullet6.style.background = '#F1F1F133'
+                } else if (swiper.activeIndex == 0) {
+                    bullet1.style.background = '#F1F1F133'
+                    swiper.slideTo(5)
+                    bullet5.style.background = '#2194FF'
+
+                }
+
+
+            })
+
+            next.addEventListener('click', function () {
+                swiper.slideNext()
+
+                if (swiper.activeIndex == 2) {
+                    bullet2.style.background = '#2194FF'
+                    bullet1.style.background = '#F1F1F133'
+                } else if (swiper.activeIndex == 3) {
+                    bullet3.style.background = '#2194FF'
+                    bullet2.style.background = '#F1F1F133'
+                    bullet1.style.background = '#F1F1F133'
+                }
+                else if (swiper.activeIndex == 4) {
+                    bullet4.style.background = '#2194FF'
+                    bullet3.style.background = '#F1F1F133'
+                    bullet2.style.background = '#F1F1F133'
+                    bullet1.style.background = '#F1F1F133'
+                } else if (swiper.activeIndex == 5) {
+                    bullet5.style.background = '#2194FF'
+
+                    bullet4.style.background = '#F1F1F133'
+                    bullet3.style.background = '#F1F1F133'
+                    bullet2.style.background = '#F1F1F133'
+                    bullet1.style.background = '#F1F1F133'
+
+                }
+                else if (swiper.activeIndex == 6) {
+                    swiper.slideTo(1)
+                    bullet1.style.background = '#2194FF'
+                    bullet5.style.background = '#F1F1F133'
+                }
+
+            })
+
+
+            // ==============responses================
+
+
+            let txt52 = document.querySelector('.txt52')
+            let img19 = document.querySelector('.img19')
+            let txt53 = document.querySelector('.txt53')
+
+            txt52.addEventListener('click', function () {
+                txt52.classList.toggle('txt51_active')
+                img19.classList.toggle('img19_active')
+                txt53.classList.toggle('txt53_active')
+            })
+
+            let txt52W1 = document.querySelector('.txt52W1')
+            let img19W2 = document.querySelector('.img19W2')
+            let txt53W3 = document.querySelector('.txt53W3')
+
+            txt52W1.addEventListener('click', function () {
+                txt52W1.classList.toggle('txt51W1_active')
+                img19W2.classList.toggle('img19W2_active')
+                txt53W3.classList.toggle('txt53W3_active')
+            })
+
+
+            let txt52W6 = document.querySelector('.txt52W6')
+            let img19W5 = document.querySelector('.img19W5')
+            let txt53W4 = document.querySelector('.txt53W4')
+
+            txt52W6.addEventListener('click', function () {
+                txt52W6.classList.toggle('txt51W6_active')
+                img19W5.classList.toggle('img19W5_active')
+                txt53W4.classList.toggle('txt53W4_active')
+            })
+
+            let txt52WW1 = document.querySelector('.txt52WW1')
+            let img19WW3 = document.querySelector('.img19WW3')
+            let txt53WW2 = document.querySelector('.txt53WW2')
+
+            txt52WW1.addEventListener('click', function () {
+                txt52WW1.classList.toggle('txt51WW1_active')
+                img19WW3.classList.toggle('img19WW3_active')
+                txt53WW2.classList.toggle('txt53WW2_active')
+            })
+
+            let txt52WWW1 = document.querySelector('.txt52WWW1')
+            let img19WWW3 = document.querySelector('.img19WWW3')
+            let txt53WwW2 = document.querySelector('.txt53WwW2')
+
+            txt52WWW1.addEventListener('click', function () {
+                txt52WWW1.classList.toggle('txt51WWW1_active')
+                img19WWW3.classList.toggle('img19WWW3_active')
+                txt53WwW2.classList.toggle('txt53WwW2_active')
+            })
+
+            let img2 = document.querySelector('.img2')
+            let txt8 = document.querySelector('.txt8')
+            let txt9 = document.querySelector('.txt9')
+            let txt10 = document.querySelector('.txt10')
+            let txt5 = document.querySelector('.txt5')
+            let tel = document.querySelector('.tel')
+            let logo = document.querySelector('.logo')
+
+            let time = setTimeout(function () {
+                img2.style.maxWidth = '1037px'
+                img2.style.transform = 'translate(0%)'
+                img2.style.transitionDuration = '2s'
+            }, 0)
+
+
+
+            let time3 = setTimeout(function () {
+                txt9.style.fontSize = '24px'
+                txt9.style.transitionDuration = '1s'
+
+
+
+                txt10.style.fontSize = '16px'
+                txt10.style.transitionDuration = '1s'
+            }, 200)
+
+
+
+
+            let time5 = setTimeout(function () {
+                txt5.style.transform = 'translateX(0%)'
+                txt5.style.transitionDuration = '1s'
+
+                tel.style.transform = 'translateX(0%)'
+                tel.style.transitionDuration = '1s'
+                logo.style.transform = 'translateX(0%)'
+                logo.style.transitionDuration = '1s'
+
+            }, 0)
+
+
+            let button1 = document.querySelector('.button1')
+            let fone = document.querySelector('.fone')
+            let body = document.querySelector('.body')
+            let close_ = document.querySelector('.close')
+            let button8 = document.querySelector('.button8')
+            let button10 = document.querySelector('.button10')
+            let button2 = document.querySelector('.button2')
+
+            button1.addEventListener('click', function () {
+                fone.style.display = 'block';
+                body.style.overflow = 'hidden'
+            })
+
+            close_.addEventListener('click', function () {
+                fone.style.display = 'none';
+                body.style.overflow = 'scroll'
+                body.style.overflowX = 'hidden'
+            })
+
+            button8.addEventListener('click', function () {
+                fone.style.display = 'block';
+                body.style.overflow = 'hidden'
+            })
+
+            button10.addEventListener('click', function () {
+                fone.style.display = 'block';
+                body.style.overflow = 'hidden'
+            })
+
+            button2.addEventListener('click', function () {
+                fone.style.display = 'block';
+                body.style.overflow = 'hidden'
+            })
+
+
+
+            function onScrolledTo(el, callback) {
+
+
+                function normOffset() {
+                    var eR = el.getBoundingClientRect();
+                    return 1.0 - eR.bottom / (window.innerHeight + el.offsetHeight);
+                }
+
+                // Выполнение задачи
+                function taskUpdate() {
+                    if (normOffset() > 0) {
+                        window.removeEventListener('resize', onUpdate);
+                        window.removeEventListener('scroll', onUpdate);
+                        callback();
+                    }
+                }
+
+                // Слушатель
+                function onUpdate(event) {
+                    taskUpdate();
+                }
+
+                // Запуск задачи
+                window.addEventListener('resize', onUpdate);
+                window.addEventListener('scroll', onUpdate);
+                taskUpdate();
+
+            }
+
+            //*********************************************
+
+            let txt27 = document.querySelector('.txt27')
+            let txt56 = document.querySelector('.txt56')
+            let txt33 = document.querySelector('.txt33')
+            let txt35 = document.querySelector('.txt35')
+            let txt47 = document.querySelector('.txt47')
+
+            onScrolledTo(document.querySelector('.txt27'), function () {
+                txt27.style.fontSize = '36px'
+                txt27.style.transitionDuration = '1.5s'
+            });
+
+            onScrolledTo(document.querySelector('.img16'), function () {
+                img16.style.maxWidth = '596px'
+                img16.style.transitionDuration = '1.5s'
+            });
+
+            onScrolledTo(document.querySelector('.prev'), function () {
+                prev.style.position = 'relative'
+                prev.style.right = '0px'
+                prev.style.transitionDuration = '1s'
+            });
+
+            onScrolledTo(document.querySelector('.next'), function () {
+                next.style.position = 'relative'
+                next.style.right = '0px'
+                next.style.transitionDuration = '1s'
+            });
+
+            onScrolledTo(document.querySelector('.txt56'), function () {
+                txt56.style.width = '206px'
+                txt56.style.transitionDuration = '1s'
+            });
+
+
+
+            onScrolledTo(document.querySelector('.txt33'), function () {
+                txt33.style.position = 'relative'
+                txt33.style.top = '0px'
+                txt33.style.transitionDuration = '1s'
+            });
+
+            onScrolledTo(document.querySelector('.txt35'), function () {
+                txt35.style.position = 'relative'
+                txt35.style.bottom = '0px'
+                txt35.style.transitionDuration = '1s'
+            });
+
+
+
+        </script>
+
+
+</body>
+
+</html>

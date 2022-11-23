@@ -1,0 +1,60 @@
+function onScrolledTo(el, callback) {
+
+  // Определяем нормализованное смещение элемента в видимой области окна (от 0 до 1)
+  // 0 = элемент выехал снизу из под экрана ... 1 = элемент заехал вверх под экран
+  
+  function normOffset() {
+    var eR = el.getBoundingClientRect();
+    return 1.0 - eR.bottom / (window.innerHeight + el.offsetHeight);
+  }
+
+  // Выполнение задачи
+  function taskUpdate() {
+    if (normOffset() > 0) {
+      window.removeEventListener('resize', onUpdate);
+      window.removeEventListener('scroll', onUpdate);
+      callback();
+    }
+  }
+
+  // Слушатель
+  function onUpdate(event) {
+    taskUpdate();
+  }
+
+  // Запуск задачи
+  window.addEventListener('resize', onUpdate);
+  window.addEventListener('scroll', onUpdate);
+  taskUpdate();
+
+}
+
+//*********************************************
+
+onScrolledTo(document.getElementById('el'), function() {
+  alert("Вы доскролили до нужного блока");
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
